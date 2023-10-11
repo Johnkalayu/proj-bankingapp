@@ -41,7 +41,7 @@ node{
     }    
 	
 	stage('Ansible Playbook Execution'){
-		sh "ansible-playbook -i inventory.yaml kubernetesDeploy.yaml -e httpPort=8989 -e containerName=bankingapp-e dockerImageTag=johnkalayu/bankingapp:latest"
+		sh "ansible-playbook -i inventory.yaml kubernetesDeploy.yaml -e httpPort=8989 -e containerName=bankingapp -e dockerImageTag=johnkalayu/bankingapp:latest"
 	}
 }
 
