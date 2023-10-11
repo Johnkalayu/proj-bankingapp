@@ -35,7 +35,7 @@ node{
         echo 'Pushing the docker image to DockerHub'
         withCredentials([usernamePassword(credentialsId: 'Dockerhub', usernameVariable: 'johnkalayu', passwordVariable: 'PAPILLONJ')]) {
 		sh "docker login -u johnkalayu -p PAPILLONJ"
-		sh "docker push johnkalayu/bankingapp:latest"
+		sh "docker push johnkalayu/bankingapp"
 		echo "Image push complete"
         } 
     }    
