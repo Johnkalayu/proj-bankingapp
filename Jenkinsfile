@@ -28,7 +28,7 @@ node{
     
     stage('Docker Image Build'){
         echo 'Creating Docker image'
-        sh "docker build -t bankingpp ."
+        sh "docker build -t bankingapp ."
     }  
 	
     stage('Publishing Image to DockerHub'){
