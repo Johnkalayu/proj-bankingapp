@@ -28,7 +28,7 @@ node{
     
     stage('Docker Image Build'){
         echo 'Creating Docker image'
-        sh "docker build -t johnkalayu/bankingapp:latest --pull --no-cache ."
+        sh "docker build -t johnkalayu/bankingapp:latest ."
     }  
 	
     stage('Publishing Image to DockerHub'){
